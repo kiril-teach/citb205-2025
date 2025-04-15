@@ -1,0 +1,13 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: None
+BraceWrapping:
+  AfterClass: true
+  AfterStruct: true
+  AfterEnum: true
+  BeforeElse: true
+  IndentBraces: false
+AccessModifierOffset: -4
+SortIncludes: Never
+EmptyLineBeforeAccessModifier: Always

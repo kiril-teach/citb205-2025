@@ -2,7 +2,13 @@
 
 Menu::Menu(std::istream &in)
 {
-    
+    while(!in.eof())
+    {
+        std::string name;
+        double price;
+        in >> name >> price;
+        items.push_back(Item(name, price));
+    }
 }
 
 void Menu::print(std::ostream &out)

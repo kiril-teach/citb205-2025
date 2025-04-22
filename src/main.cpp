@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "order.h"
 #include "item.h"
 #include "discount.h"
@@ -8,10 +9,24 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+    for (int i = 0; i < argc; ++i)
+    {
+        cerr << "argv[" << i << "] = " << argv[i] << endl;
+    }
+    
+    if (argc != 2)
+    {
+        cout << "Usage: " << argv[0] << " <menu_file>" << endl;
+        return 1;
+    }
+
     cout << "Welcome to Darsi!" << endl;
 
     Order order;
-    Menu menu;
+
+    ifstream fin(argv[1]);
+    Menu menu(fin);
+    fin.close();
 
     string cmd;
     while (cin >> cmd)

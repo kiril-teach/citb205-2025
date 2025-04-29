@@ -76,6 +76,35 @@ X9Y8 (Premium) - $100.00
 A1B2 (Standard) - $450.50
 ```
 
+### Deposit
+```
+Choose option: 4
+Enter account number: A1B2
+Enter amount to deposit: 200
+Deposit successful. New balance: 300.00
+```
+
+---
+
+### Withdraw
+```
+Choose option: 5
+Enter account number: A1B2
+Enter amount to withdraw: 50
+Withdrawal successful. Fee: 0.50. New balance: 249.50
+```
+
+---
+
+### Transfer
+```
+Choose option: 6
+Enter source account number: A1B2
+Enter destination account number: Z9X8
+Enter amount to transfer: 100
+Transfer successful. Fee: 1.00. New balance: 148.50
+```
+
 ### Show Account
 ```
 Choose option: 7

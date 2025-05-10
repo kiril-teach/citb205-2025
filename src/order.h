@@ -15,6 +15,7 @@ public:
     void add(const Item &item);
     void set(const Discount *discount);
     void print(std::ostream &out);
+
 private:
     vector<Item> items;
     const Discount *discount;

@@ -70,7 +70,7 @@
 
 | Команда | Описание | Примерен изход |
 | :-- | :-- | :-- |
-| `submit <src> <dest> <amount>` | Създава нова трансакция (чакаща) | `Transaction 1 submitted (Pending).` |
+| `submit <src> <dest> <amount>` | Създава нова трансакция (чакаща) | `Transaction executed successfully.` |
 | `history` | Извежда последните 10 изпълнени трансакции | ```ACC123 -> ACC456: $500.50\nACC654 -> ACC777: $750.00``` |
 | `reload` | Презарежда сметките от файл | `Accounts reloaded.` |
 | `account <number>` | Показва баланс и собственик на сметка | `Account: ACC123\nOwner: John Doe\nBalance: $2500.00` |
@@ -85,6 +85,7 @@ Error: Account ACC999 does not exist.
 
 > submit ACC999 ACC123 10000.00
 Error: Account ACC999 has insufficient funds.
+```
 
 #### **Примерен файл със сметки**
 ```
